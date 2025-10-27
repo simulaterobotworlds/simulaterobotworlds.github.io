@@ -1,0 +1,382 @@
+---
+layout: coverpage
+---
+
+<div class="banner">
+  <video src="images/banner.mp4" class="banner-img" autoplay muted loop playsinline>
+    <p>Your browser doesn't support HTML5 video. Here is a <a href="images/banner.mp4">link to the video</a> instead.</p>
+  </video>
+  <div class="banner-text">
+    <h2>Learning to Simulate Robot Worlds</h2>
+    <h4>CVPR 2026 Workshop</h4>
+  </div>
+</div>
+
+<div class="row main-content">
+  <div class="break"></div>
+  <p>
+    Robotics is entering an era where high-fidelity simulation and data-driven controllable world models are converging to revolutionize learning for manipulation and navigation. Traditionally, physics-based simulators and digital twins have been the go-to approach for training and evaluating robot policies. However, constructing realistic simulations with engines like Unity or Unreal is labor-intensive and often fails to capture the full complexity of the real world.
+  </p>
+  <p>
+    Recent advances in large-scale pretrained models have enabled the generation of videos, 3D assets, and even entire simulators. At the same time, compact world models learned from scratch can capture task-specific dynamics tailored to a particular robot. Together, these approaches show that simulations no longer need to be manually constructed, they can be learned directly from data.
+  </p>
+  <p>
+    This workshop aims to bridge the spectrum from physics-grounded simulation, photorealistic digital twins, AI-controlled simulators, to fully learned neural world models. We will explore how cutting-edge simulation technologies, such as differentiable physics engines and realistic rendering, can integrate with or evolve into learned models of the world.
+  </p>
+  <p>
+    The goal is to bring together researchers from traditionally separate communities: those focused on high-fidelity simulators and those developing learned implicit models. Together, we will discuss how to combine the strengths of both approaches to advance robot learning.
+  </p>
+  <p>
+    We are sourcing two different types of papers: four-page papers and one-page abstracts, focusing on learning to simulate robot worlds and their applications in robotics. Read the <a href="submit.html">submission page</a> for more details.
+  </p>
+</div>
+
+<div class="row main-content">
+  <h2>Topics</h2>
+  <div class="break"></div>
+  <ul>
+    <li>Real-to-Sim and Sim-to-Real Learning</li>
+    <li>Photorealistic Differentiable Simulation for Robotics (e.g. NeRFs, 3D Gaussian Splatting)</li>
+    <li>Learnable Physics Simulations and System Identification</li>
+    <li>Reconstruction and generation of articulated and deformable objects</li>
+    <li>Policy training and evaluation with learned world models, realistic simulations and digital twins</li>
+    <li>End-to-end world models learning</li>
+    <li>Explicit vs. implicit world models</li>
+    <li>Compositional world models and controllable video generation models</li>
+  </ul>
+</div>
+
+<div class="row main-content">
+<p>
+  <!--
+  <h2>Important Dates and Links</h2>
+  <p>
+  <table class="table table-striped">
+    <tbody>
+    <tr>
+      <td>Submission site opens</td>
+      <td>25.07.2025</td>
+    </tr>
+    <tr>
+      <td>Submission deadline (4-page submissions & 1-page abstracts)</td>
+      <td><s>18.08.2025</s> 25.08.2025</td>
+    </tr>
+    <tr>
+      <td>Decisions announced</td>
+      <td>05.09.2025</td>
+    </tr>
+    <tr>
+      <td>Camera-ready due</td>
+      <td>15.09.2025</td>
+    </tr>
+    </tbody>
+    </table>
+  </p>
+</div>
+
+<div id="speakers" class="row main-content">
+  <h2>Speakers and Panelists</h2>
+  <div class="break"></div>
+  <div class="container" style="max-width: 1140px;">
+  <div class="row align-items-start mb-4">
+
+    <div class="col-md-3 text-center">
+      <img class="img-fluid rounded-circle mb-2" height="150" width="150"
+        src="images/speakers/animesh-garg.jpg" alt="Animesh Garg">
+      <a href="https://animesh.garg.tech/">
+        <h4 class="section-heading">Animesh Garg</h4>
+      </a>
+      <h5 class="section-heading"><i>Georgia Tech</i></h5>
+    </div>
+
+    <div class="col-md-9">
+      <p><strong>Short Bio:</strong> Animesh Garg is the Stephen Fleming Early Career Professor in Computer Science at Georgia Tech, within the School of Interactive Computing, and is affiliated with the Robotics and Machine Learning programs. He holds courtesy appointments at the University of Toronto and the Vector Institute. Previously, he held research leadership positions at Nvidia and Apptronik. His research focuses on the algorithmic foundations of generalizable autonomy, enabling robots to acquire cognitive and dexterous skills and collaborate with humans in novel environments. His group explores structured inductive biases, causality in decision-making, multimodal object-centric representations, self-supervised learning for control, and efficient dexterous skill acquisition.</p>
+
+    </div>
+      <hr>
+
+    <div class="col-md-3 text-center">
+      <img class="img-fluid rounded-circle mb-2" height="150" width="150"
+        src="images/speakers/daniel_ho.jpeg" alt="">
+        <a href="https://itsdanielho.com/">
+          <h4 class="section-heading">
+            <center>Daniel Ho</center>
+          </h4>
+        </a>
+        <h5 class="section-heading">
+          <center><i>1X Technologies</i></center>
+        </h5>
+      </div>
+
+    <div class="col-md-9">
+      <p><strong>Short Bio:</strong> Daniel Ho is the Director of Evaluation at 1X Technologies. His goal is to deploy generalist machines that grow from experience and correct their own mistakes. He's building World Models and large-scale evaluation pipelines towards this mission. Previously, he worked on robotics, perception, and machine learning as a Senior Software Engineer at Waymo and Everyday Robots (X, Google[X]). His research has focused on learning algorithms and representation learning to generalize ML model understanding in robotics, computer vision, and self-driving.</p>
+      <p><strong>Talk Title:</strong> 1X World Model: Solving humanoid policy training and evaluation with data synthesis and action control</p>
+
+    </div>
+      <hr>
+        <div class="col-md-3 text-center">
+      <img class="img-fluid rounded-circle mb-2" height="150" width="150"
+        src="images/speakers/hao_su.jpg" alt="">
+               <a href="https://cseweb.ucsd.edu/~haosu/">
+          <h4 class="section-heading">
+            <center>Hao Su</center>
+          </h4>
+        </a>
+        <h5 class="section-heading">
+          <center><i>UC San Diego</i></center>
+        </h5>
+      </div>
+
+    <div class="col-md-9">
+      <p><strong>Short Bio:</strong> Hao Su is an Associate Professor of Computer Science at UC San Diego and Founder & CTO of Hillbot, a robotics startup. He directs the Embodied Intelligence Lab and is a founding member of the Halıcıoğlu Data Science Institute. His research spans computer vision, machine learning, graphics, and robotics, focusing on algorithms to simulate and interact with the physical world. He holds Ph.D.s in Computer Science from Stanford and Mathematics from Beihang University. He helped develop datasets like ImageNet, ShapeNet, and tools like PointNet. Su is Program Chair of CVPR 2025 and has received NSF CAREER and SIGGRAPH awards.</p>
+      <p><strong>Talk Title:</strong>Learning World Models for Embodied AI</p>
+
+    </div>
+      <hr>
+
+    <div class="col-md-3 text-center">
+      <img class="img-fluid rounded-circle mb-2" height="150" width="150"
+       src="images/speakers/katerina-fragkiadaki.png" alt="">
+        <a href="https://www.cs.cmu.edu/~katef/">
+          <h4 class="section-heading">
+            <center>Katerina Fragkiadaki</center>
+          </h4>
+        </a>
+        <h5 class="section-heading">
+          <center><i>Carnegie Mellon University</i></center>
+        </h5>
+      </div>
+
+    <div class="col-md-9">
+      <p><strong>Short Bio:</strong> Katerina Fragkiadaki is the JPMorgan Chase Associate Professor in Machine Learning at Carnegie Mellon University. She earned her B.S. from the National Technical University of Athens and her Ph.D. from the University of Pennsylvania, followed by postdoctoral work at UC Berkeley and Google Research. Her research combines common sense reasoning with deep visuomotor learning to enable few-shot and continual learning for perception, action, and language grounding. Her group develops methods in 2D-to-3D perception, vision-language grounding, and navigation policies. She received awards including the NSF CAREER and DARPA Young Investigator Awards and is Program Chair for ICLR 2024.</p>
+      <p><strong>Talk Title:</strong> From Videos to Physics Engine Simulations to Neural Simulations</p>
+    </div>
+      <hr>
+
+        <div class="col-md-3 text-center">
+      <img class="img-fluid rounded-circle mb-2" height="150" width="150"
+            src="images/speakers/yilun_du.png" alt="">
+        <a href="https://yilundu.github.io/">
+          <h4 class="section-heading">
+            <center>Yilun Du</center>
+          </h4>
+        </a>
+        <h5 class="section-heading">
+          <center><i>Harvard University</i></center>
+        </h5>
+      </div>
+
+    <div class="col-md-9">
+      <p><strong>Short Bio:</strong> Yilun Du is an Assistant Professor at Harvard’s Kempner Institute and Computer Science Department, and a Senior Research Scientist at Google DeepMind. He earned his Ph.D. in EECS from MIT, advised by Leslie Kaelbling, Tomas Lozano-Perez, and Joshua Tenenbaum. He holds a bachelor’s from MIT and has been a research fellow at OpenAI and a visiting researcher at FAIR and DeepMind. A gold medalist at the International Biology Olympiad, his research focuses on generative models, decision making, robot learning, and embodied agents. He develops energy-based models enabling generalization and advances in diffusion models, scene understanding, and trajectory planning.</p>
+      <p><strong>Talk Title:</strong> Learning Generative World Simulators</p>
+
+    </div>
+    <hr>
+    <div class="col-md-3 text-center">
+      <img class="img-fluid rounded-circle mb-2" height="150" width="150"
+            src="images/speakers/nicholas_pfaff.jpg" alt="">
+        <a href="https://nepfaff.github.io">
+          <h4 class="section-heading">
+            <center>Nicholas Pfaff</center>
+          </h4>
+        </a>
+        <h5 class="section-heading">
+          <center><i>MIT</i></center>
+        </h5>
+      </div>
+
+    <div class="col-md-9">
+      <p><strong>Short Bio:</strong> Nicholas Pfaff is a third-year PhD student in the Robot Locomotion Group at MIT, advised by Prof. Russ Tedrake. His research focuses on scaling realistic simulations to generate training data for robotic manipulation foundation models, combining model-based and learning-based approaches. Prior to MIT, he worked at Ocado Technology on large-scale pick-and-place systems, and he is a recipient of an MIT Graduate Teaching Award.
+      </p>
+      <p><strong>Talk Title:</strong> Scaling Robot Simulation: Automating Physically Accurate and Diverse Worlds</p>
+
+    </div>
+          <hr>
+
+    <div class="col-md-3 text-center">
+      <img class="img-fluid rounded-circle mb-2" height="150" width="150"
+            src="images/speakers/boyi_li.jpg" alt="">
+        <a href="https://sites.google.com/site/boyilics/home/">
+          <h4 class="section-heading">
+            <center>Boyi Li</center>
+          </h4>
+        </a>
+        <h5 class="section-heading">
+          <center><i>NVIDIA & UC Berkeley</i></center>
+        </h5>
+      </div>
+
+    <div class="col-md-9">
+      <p><strong>Short Bio:</strong> Boyi Li is a Research Staff at NVIDIA Research and a Research Fellow at UC Berkeley. She earned her Ph.D. in EECS from Cornell University & Cornell Tech. Her research focuses on advancing multimodal embodied intelligence, developing generalizable algorithms, and creating interactive intelligent systems. Central to this work is reasoning, language models, generative models, and robotics. A key aspect involves aligning representations from diverse multimodal data, including 2D pixels, 3D geometry, language, and audio.</p>
+      <p><strong>Talk Title:</strong>Learning to Simulate Multimodal Robot Worlds</p>
+
+    </div>
+
+    </div>
+  </div>
+</div>
+-->
+
+<div id="organizers" class="row main-content">
+<h2>Organizers</h2>
+<div class="break"></div>
+      <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+          <div class="col-sm-4 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/andriizadaianchuk2.jpg" alt=""></center>
+            <a href="https://zadaianchuk.github.io/">
+              <h4 class="section-heading">
+                <center>Andrii Zadaianchuk</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>University of Amsterdam</i></center>
+            </h5>
+          </div>
+
+          <div class="col-sm-4 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/christian-gumbsch.png" alt=""></center>
+            <a href="https://cgumbsch.github.io">
+              <h4 class="section-heading">
+                <center>Christian Gumbsch</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>University of Amsterdam</i></center>
+            </h5>
+          </div>
+
+          <div class="col-sm-4 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/leonardo-barcellona.jpg" alt=""></center>
+            <a href="#">
+              <h4 class="section-heading">
+                <center>Leonardo Barcellona</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>University of Amsterdam</i></center>
+            </h5>
+          </div>
+
+        </div>
+
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+
+          <div class="col-sm-4 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/alberta-longhini.png" alt=""></center>
+            <a href="https://albilo17.github.io">
+              <h4 class="section-heading">
+                <center>Alberta Longhini</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>KTH Royal Institute of Technology </i></center>
+            </h5>
+          </div>
+
+          <div class="col-sm-4 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/katherine-liu.jpeg" alt=""></center>
+            <a href="https://www.thekatherineliu.com">
+              <h4 class="section-heading">
+                <center>Katherine Liu</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>Toyota Research Institute</i></center>
+            </h5>
+          </div>
+
+          <div class="col-sm-4 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/sergey-zakharov.jpg" alt=""></center>
+            <a href="https://zakharos.github.io">
+              <h4 class="section-heading">
+                <center>Sergey Zakharov</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>Toyota Research Institute</i></center>
+            </h5>
+          </div>
+        </div>
+
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+
+          <div class="col-sm-4 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/fabien-despinoy.jpg" alt=""></center>
+            <a href="#">
+              <h4 class="section-heading">
+                <center>Fabien Despinoy</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>Toyota Motor Europe</i></center>
+            </h5>
+          </div>
+
+          <div class="col-sm-4 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/rahaf-aljundi.jpg" alt=""></center>
+            <a href="#">
+              <h4 class="section-heading">
+                <center>Rahaf Aljundi</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>Toyota Motor Europe</i></center>
+            </h5>
+          </div>
+
+          <div class="col-sm-4 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/rares-ambrus.jpg" alt=""></center>
+            <a href="https://www.tri.global/about-us/dr-rares-ambrus">
+              <h4 class="section-heading">
+                <center>Rares Ambrus</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>Toyota Research Institute</i></center>
+            </h5>
+          </div>
+
+        </div>
+
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+          
+          <div class="col-sm-6 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/yunzhu-li.jpg" alt=""></center>
+            <a href="https://yunzhuli.github.io">
+              <h4 class="section-heading">
+                <center>Yunzhu Li</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>Columbia University</i></center>
+            </h5>
+          </div>
+          
+          <div class="col-sm-6 wow fadeInRightBig" data-animation-delay="200">
+            <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="100" width="100"
+                src="images/organizers/efstratiosgavves.png" alt=""></center>
+            <a href="https://www.egavves.com/">
+              <h4 class="section-heading">
+                <center>Efstratios Gavves</center>
+              </h4>
+            </a>
+            <h5 class="section-heading">
+              <center><i>University of Amsterdam</i></center>
+            </h5>
+          </div>
+        </div>
+      </div>
+</div>
+
+</div>
