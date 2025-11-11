@@ -15,17 +15,13 @@ layout: coverpage
 <div class="row main-content">
   <div class="break"></div>
   <p>
-    Robotics is entering an era where high-fidelity simulation and data-driven controllable world models are converging to revolutionize learning for manipulation and navigation. Traditionally, physics-based simulators and digital twins have been the go-to approach for training and evaluating robot policies. However, constructing realistic simulations with engines like Unity or Unreal is labor-intensive and often fails to capture the full complexity of the real world.
+    Robots that can think before they act are moving from science fiction to a concrete research agenda. Various fields of research, such as generative modeling, model-based reinforcement learning,  3D reconstruction, and differential rendering, are increasingly exploring a powerful framework for learning in embodied agents: world models. World models are internal simulators of an agent for predicting future observations and action outcomes. In video games and other virtual domains, world models already enable sample-efficient policy learning, zero-shot planning, and curiosity-driven exploration. The next frontier is to bring these capabilities to real-world robots operating in unstructured homes or outdoor environments, where data is scarce, uncertainty is high, and safety and generalization are paramount.
   </p>
   <p>
-    Recent advances in large-scale pretrained models have enabled the generation of videos, 3D assets, and even entire simulators. At the same time, compact world models learned from scratch can capture task-specific dynamics tailored to a particular robot. Together, these approaches show that simulations no longer need to be manually constructed, they can be learned directly from data.
+    Realizing this vision is already reshaping robotics. Robot learning is shifting from hand-crafted simulators toward data-driven methods for learning to simulate the world. Classical physics engines and digital twins remain invaluable, but they are expensive to build and slow to adapt to real-world messiness. Recent advances show that large-scale pretrained models can synthesize photorealistic 3D assets and full scenes that can be dropped into existing physics engines and digital twins, offering adaptable, physics-grounded simulations. At the same time, large-scale generative models have demonstrated that entire interactive simulators can be learned purely from internet-scale data. Neural world models, either learned from scratch or fine-tuned from pretrained video generators, can capture task-specific dynamics tailored to particular embodiments and environments. Together, these approaches provide different routes to robot world models, reducing the need for manual simulator construction and enabling more autonomous robot learning.
   </p>
   <p>
-    This workshop aims to bridge the spectrum from physics-grounded simulation, photorealistic digital twins, AI-controlled simulators, to fully learned neural world models. We will explore how cutting-edge simulation technologies, such as differentiable physics engines and realistic rendering, can integrate with or evolve into learned models of the world.
-  </p>
-  <p>
-    The goal is to bring together researchers from traditionally separate communities: those focused on high-fidelity simulators and those developing learned implicit models. Together, we will discuss how to combine the strengths of both approaches to advance robot learning.
-  </p>
+    To coordinate and accelerate these converging threads, we are launching an overarching series of workshops at top venues in vision, robotics, and machine learning under the theme “Learning to Simulate Robot Worlds”. We successfully held the first edition at CoRL 2025. We propose hosting the second edition at CVPR 2026. The computer vision community is advancing core ingredients of world models, including generative video models, 3D scene representations, neural reconstruction, and differentiable rendering. CVPR’s audience and momentum make it an ideal venue to connect the vision, graphics, and robotics communities, establish shared benchmarks, and collaborate on integrating 3D generative models with physics-based engines. Topics will range from physics-grounded simulation and photorealistic digital twins to generative video or 3D models and fully learned neural world models for model-based reinforcement learning and planning. This workshop will bring together builders of high-fidelity, physics-grounded simulators and developers of learned, implicit models with the unifying goal of equipping robots with robust world models.   </p>
   <p>
     We are sourcing two different types of papers: four-page papers and one-page abstracts, focusing on learning to simulate robot worlds and their applications in robotics. Read the <a href="submit.html">submission page</a> for more details.
   </p>
@@ -35,14 +31,18 @@ layout: coverpage
   <h2>Topics</h2>
   <div class="break"></div>
   <ul>
-    <li>Real-to-Sim and Sim-to-Real Learning</li>
-    <li>Photorealistic Differentiable Simulation for Robotics (e.g. NeRFs, 3D Gaussian Splatting)</li>
-    <li>Learnable Physics Simulations and System Identification</li>
+    <li>End-to-end world model learning</li>
+    <li>Real-to-simulation and simulation-to-real transfer</li>
+    <li>Photorealistic differentiable simulation for robotics (e.g. NeRFs, 3D Gaussian Splatting)</li>
+    <li>Automatic digital twin construction</li>
+    <li>Learnable physics simulations</li>
     <li>Reconstruction and generation of articulated and deformable objects</li>
-    <li>Policy training and evaluation with learned world models, realistic simulations and digital twins</li>
-    <li>End-to-end world models learning</li>
+    <li>Policy optimization with world models or digital twins</li>
+    <li>Model-based reinforcement learning and planning for robotics</li>
     <li>Explicit vs. implicit world models</li>
-    <li>Compositional world models and controllable video generation models</li>
+    <li>Compositional world models</li>
+    <li>Controllable video generation models</li>
+    <li>Uncertainty, safety, and OOD detection in world models</li>
   </ul>
 </div>
 
